@@ -10,10 +10,10 @@ function EventsSearch(props) {
   function submitHandler(event) {
     event.preventDefault();
 
-    const SelectedYear = yearInputRef.current.value;
-    const SelectedMonth = monthINputRef.current.value;
+    const selectedYear = yearInputRef.current.value;
+    const selectedMonth = monthINputRef.current.value;
 
-    props.onSearch(selectYear, selectedMonth);
+    props.onSearch(selectedYear, selectedMonth);
   }
 
   return (
